@@ -68,11 +68,14 @@
     {{!-- The global footer at the very bottom of the screen --}}
     <footer class="site-footer outer">
         <div class="inner">
-            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+            <div style="text-align: center;">
+                <a href="{{@site.url}}" target="_blank" rel="noopener">
+                    {{@site.title}} &copy; {{date format="YYYY"}}. All rights reserved.
+                </a>
+            </div>
         </div>
     </footer>
 
